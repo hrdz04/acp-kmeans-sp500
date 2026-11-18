@@ -14,12 +14,13 @@ from src import procesamiento as pr
 
 st.set_page_config(page_title="S&P 500 · ACP y K-Means", page_icon=":material/analytics:", layout="wide")
 
-PALETA = ["#1f4e79", "#e07b39", "#2a9d8f", "#c44e52", "#8172b2", "#937860", "#da8bc3", "#5b8e7d"]
+PALETA = ["#3b82c4", "#e07b39", "#2a9d8f", "#c44e52", "#8172b2", "#937860", "#da8bc3", "#5b8e7d"]
 st.markdown("""
 <style>
-h1, h2, h3 {color:#1f4e79;}
-div[data-testid="stMetricValue"] {color:#1f4e79;}
-.nota {background:#f3f6fa;border-left:4px solid #1f4e79;padding:0.8rem 1rem;border-radius:4px;margin:0.4rem 0 1rem 0;}
+/* Colores que se leen bien tanto en tema claro como oscuro */
+div[data-testid="stMetricValue"] {color:#3b82c4;}
+.nota {background:rgba(59,130,196,0.12);border-left:4px solid #3b82c4;color:inherit;
+       padding:0.8rem 1rem;border-radius:4px;margin:0.4rem 0 1rem 0;}
 </style>""", unsafe_allow_html=True)
 
 
