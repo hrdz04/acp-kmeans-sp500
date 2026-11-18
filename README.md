@@ -4,7 +4,7 @@
 **Taller individual — Machine Learning aplicado a Economía y Finanzas**
 Pontificia Universidad Javeriana Cali · Hector William Hernández Abadía · 2026
 
-**Aplicación desplegada:** `PEGA_AQUÍ_EL_ENLACE_DE_STREAMLIT`
+**Aplicación desplegada:** `https://acp-kmeans-sp500-a5t629oh86vtmiivbkfh66.streamlit.app/`
 **Video de sustentación:** `PEGA_AQUÍ_EL_ENLACE_DEL_VIDEO`
 
 ---
