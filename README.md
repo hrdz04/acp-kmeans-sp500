@@ -124,7 +124,7 @@ cambian en la barra lateral.
 ## 6. Cómo ejecutar
 
 ```bash
-git clone https://github.com/TU_USUARIO/acp-kmeans-sp500.git
+git clone https://github.com/hrdz04/acp-kmeans-sp500.git
 cd acp-kmeans-sp500
 python -m venv .venv
 # Windows: .venv\Scripts\activate    |   Mac/Linux: source .venv/bin/activate
