@@ -12,7 +12,7 @@ import streamlit as st
 
 from src import procesamiento as pr
 
-st.set_page_config(page_title="S&P 500 · ACP y K-Means", page_icon="📊", layout="wide")
+st.set_page_config(page_title="S&P 500 · ACP y K-Means", page_icon=":material/analytics:", layout="wide")
 
 PALETA = ["#1f4e79", "#e07b39", "#2a9d8f", "#c44e52", "#8172b2", "#937860", "#da8bc3", "#5b8e7d"]
 st.markdown("""
@@ -37,7 +37,7 @@ def datos():
 
 df_raw = datos()
 
-st.sidebar.title("📊 S&P 500 · ACP + K-Means")
+st.sidebar.title("S&P 500 · ACP + K-Means")
 pagina = st.sidebar.radio("Secciones", [
     "1. Contexto y datos",
     "2. Exploración",
@@ -48,7 +48,7 @@ pagina = st.sidebar.radio("Secciones", [
 ])
 
 st.sidebar.markdown("---")
-st.sidebar.subheader("⚙️ Parámetros del análisis")
+st.sidebar.subheader("Parámetros del análisis")
 st.sidebar.caption("Todo se recalcula al cambiar un parámetro.")
 variables = st.sidebar.multiselect(
     "Variables del modelo (mínimo 4)", pr.VARS_DEFECTO, default=pr.VARS_DEFECTO,
@@ -501,7 +501,7 @@ elif pagina.startswith("5"):
                  .style.format({"Silueta": "{:.2f}", "Cap. (USD mil M)": "{:,.1f}", "Price/Earnings": "{:.1f}",
                                 "Dividend Yield": "{:.2%}"}),
                  width="stretch", hide_index=True, height=380)
-    st.download_button("⬇️ Descargar asignación de grupos (CSV)",
+    st.download_button("Descargar asignación de grupos (CSV)",
                        base[["Symbol", "Name", "Sector GICS", "Grupo", "Silueta"]].to_csv(index=False).encode("utf-8"),
                        "grupos_sp500.csv", "text/csv")
 
